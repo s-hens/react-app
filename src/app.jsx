@@ -2,10 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import Button from './buttons'
+import handleButtonClick from './handleButtonClick'
 import './App.css'
 
 function App() {
-
+/*
+  const handleButtonClick = () => {
+    window.location.href = "http://www.google.com";
+  }
+*/
   return (
     <>
       <div>
@@ -28,7 +33,7 @@ function App() {
       <div>
       <Button />
       <Button text="Don't Click Me!" color="red" fontSize={12} />
-      <Button text="Click Me!" color="blue" fontSize={20} />
+      <Button text="Click Me!!!!!" color="blue" fontSize={20} handleClick={handleButtonClick}/>
       </div>
 
     </>

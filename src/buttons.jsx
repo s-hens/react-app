@@ -16,14 +16,14 @@ function Button(props) {
 }
 */
 
-function Button({text = "Click me!", color = "blue", fontSize = 12}) {
+function Button({text = "Click me!", color = "blue", fontSize = 12, handleClick}) {
     const buttonStyle = {
         color: color,
         fontSize: fontSize + "px"
     };
 
     return (
-        <button style={buttonStyle}>{text}</button>
+        <button style={buttonStyle} onClick={handleClick}>{text}</button>
     )
 
     // Rewritten using prop destructuring AND providing default props
@@ -36,6 +36,10 @@ function Button({text = "Click me!", color = "blue", fontSize = 12}) {
     // Saves repetition.
     // When default values are used, it looks like this <Button />
     // Default values can be overriden if needed, using the same syntax as you would when no default is provided <Button text="Don't Click Me!" color="red" fontSize={12} />
+
+    // Assigned a default onClick function
+    // handleClick doesn't have to be the function name, it's just the prop name
+    // The prop handleClick will be assigned to a function that is defined in app.jsx (or imported into it)
 }
 
 export default Button;
