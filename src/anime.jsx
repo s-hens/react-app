@@ -1,6 +1,12 @@
+import { v4 as uuid } from 'uuid';
+
 function Anime() {
-    const goodAnime = ["Spy x Family", "My Hero Academia", "One Punch Man", "Cowboy Bebop", "Barakamon", "Saint Young Men", "Laid Back Camp"];
-    const goodAnimeList = goodAnime.map(anime => <li key={anime}>{anime}</li>);
+    const goodAnime = [
+        {name: "Spy x Family", id: uuid()},
+        {name: "My Hero Academia", id: uuid()},
+        {name: "One Punch Man", id: uuid()}
+    ];
+    const goodAnimeList = goodAnime.map(anime => <li key={anime.id}>{anime.name}</li>);
 
     return (
         <>
