@@ -1,5 +1,5 @@
 function Greeting() {
-    return <h2>&quot;Put yourself out there. Being awesome is long-tail.&quot;</h2>;
+    return <h2>&quot;Fall down seven times, stand up eight.&quot;</h2>;
 }
 
 export default Greeting;
