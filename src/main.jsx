@@ -4,7 +4,6 @@ import App from './app.jsx'
 import Greeting from './greeting.jsx'
 import Pho from './pho.jsx'
 import Anime from './anime.jsx'
-import Button from './buttons.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -13,6 +12,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Greeting />
     <Pho />
     <Anime />
-    <Button />
   </React.StrictMode>,
 )
